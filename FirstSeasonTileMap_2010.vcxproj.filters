@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{c1fcd6e4-0a10-4088-b422-f0326343d54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame">
+      <UniqueIdentifier>{d8354ab1-a789-4b4a-b3ad-c16e0bf3ba0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{f5838d77-d15a-4cdd-811e-c08d8ae6d2a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SceneManager">
+      <UniqueIdentifier>{c2c58a4f-4674-4c4e-8f9e-5952f4617178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\ImageManager">
+      <UniqueIdentifier>{f1309a58-75d2-4114-87c0-d2bcd7199e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{0f19fc9e-72d5-449f-8d3a-3845dbe18232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Scenes">
+      <UniqueIdentifier>{4a5cd784-cbff-4288-8f4f-083511e7ebeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Scenes\Test">
+      <UniqueIdentifier>{089c81eb-7482-47a6-9ab8-6df7dabf02b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Sprites">
+      <UniqueIdentifier>{fa497dd3-7deb-4ca8-9474-95092a9c6368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Sprites\SingleSprite">
+      <UniqueIdentifier>{fb567853-c5e9-4440-bbe7-f9ca950a0d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Sprites\MultiSprite">
+      <UniqueIdentifier>{79d0e6f4-ac46-43ad-945e-e55e0ae18807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects">
+      <UniqueIdentifier>{8306a19b-5031-4fd8-9adb-cb19f6826fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Player">
+      <UniqueIdentifier>{15b6aedd-a2c7-484b-84c6-6dd207cef8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Scenes\Loading">
+      <UniqueIdentifier>{26b50875-6774-40f6-b2ff-9cafc1ba9897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Guns">
+      <UniqueIdentifier>{a48682c9-8b15-4c23-9d65-8ad581b91879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Guns\Revolver">
+      <UniqueIdentifier>{2f918971-f7bc-4934-a959-9583cf945422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\InputManager">
+      <UniqueIdentifier>{a53cbbe6-c405-4039-8018-2d1dbe4a3c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Cursor">
+      <UniqueIdentifier>{175b2e93-2ece-44d6-8b6e-3790ebd5ac9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SoundManager">
+      <UniqueIdentifier>{f356eb77-6538-4b1e-bc00-f13023237052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\FSM">
+      <UniqueIdentifier>{a518a260-02a9-4430-abeb-bff72e1d3c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\FSM\CState">
+      <UniqueIdentifier>{e985e1eb-4d4b-4aca-8d56-6b3d24ced209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\FSM\CStateMachine">
+      <UniqueIdentifier>{73393f00-b78a-4542-b60c-5b1621819d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\FSM\Telegram">
+      <UniqueIdentifier>{8fecef15-f351-4f39-bde7-1150ef0a40b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\MessageManager">
+      <UniqueIdentifier>{3e0ca38b-2c47-4807-8cfc-a9cb4832ee69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\OBJManager">
+      <UniqueIdentifier>{f98b9314-9b15-4b66-8018-27eb43694b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Player\States">
+      <UniqueIdentifier>{5729e423-e6ad-4c7d-a55f-848651bfb4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Player\States\OnPlayerControl">
+      <UniqueIdentifier>{9bc147e4-9cbf-4edf-a92a-a3234fa12b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Headers">
+      <UniqueIdentifier>{541b9838-227a-4631-b0b3-e30db4de2708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\Bullet">
+      <UniqueIdentifier>{d84acbe6-59d4-4b9c-8cba-5105d0cd4304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\TileMapManager">
+      <UniqueIdentifier>{de85b495-87cd-4dc7-b5b8-ae013e25c634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\CameraManager">
+      <UniqueIdentifier>{cad62feb-e95c-4a97-93f1-2a5233f3768f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\TIle">
+      <UniqueIdentifier>{82987466-5910-4cf1-99f3-25b6e293beb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\TIle\CTileMap">
+      <UniqueIdentifier>{91eb1c24-395f-42e5-9cb1-ba201eb69390}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FirstSeasonTileMap.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainGame.cpp">
+      <Filter>MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Assets\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="CTest.cpp">
+      <Filter>Assets\Scenes\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageManager.cpp">
+      <Filter>Manager\ImageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CSprite.cpp">
+      <Filter>Assets\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="CSingleSprite.cpp">
+      <Filter>Assets\Sprites\SingleSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="CMultiSprite.cpp">
+      <Filter>Assets\Sprites\MultiSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="CObj.cpp">
+      <Filter>Assets\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Assets\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoading.cpp">
+      <Filter>Assets\Scenes\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="CGun.cpp">
+      <Filter>Assets\Objects\Guns</Filter>
+    </ClCompile>
+    <ClCompile Include="CRevolver.cpp">
+      <Filter>Assets\Objects\Guns\Revolver</Filter>
+    </ClCompile>
+    <ClCompile Include="CInputManager.cpp">
+      <Filter>Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CCursor.cpp">
+      <Filter>Assets\Objects\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="cSoundManager.cpp">
+      <Filter>Manager\SoundManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CState.cpp">
+      <Filter>Assets\FSM\CState</Filter>
+    </ClCompile>
+    <ClCompile Include="CStateMachine.cpp">
+      <Filter>Assets\FSM\CStateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="CTelegram.cpp">
+      <Filter>Assets\FSM\Telegram</Filter>
+    </ClCompile>
+    <ClCompile Include="CMessageManager.cpp">
+      <Filter>Manager\MessageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjManager.cpp">
+      <Filter>Manager\OBJManager</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPlayerControl.cpp">
+      <Filter>Assets\Objects\Player\States\OnPlayerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="CCameraManager.cpp">
+      <Filter>Manager\CameraManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CBullet.cpp">
+      <Filter>Assets\Objects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CTileMapManager.cpp">
+      <Filter>Manager\TileMapManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CTile.cpp">
+      <Filter>Assets\Objects\TIle</Filter>
+    </ClCompile>
+    <ClCompile Include="CTileMap.cpp">
+      <Filter>Assets\Objects\TIle\CTileMap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="FirstSeasonTileMap.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="CMainGame.h">
+      <Filter>MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Assets\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="CTest.h">
+      <Filter>Assets\Scenes\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageManager.h">
+      <Filter>Manager\ImageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CSprite.h">
+      <Filter>Assets\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleSprite.h">
+      <Filter>Assets\Sprites\SingleSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="CMultiSprite.h">
+      <Filter>Assets\Sprites\MultiSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="CObj.h">
+      <Filter>Assets\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Assets\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoading.h">
+      <Filter>Assets\Scenes\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="CGun.h">
+      <Filter>Assets\Objects\Guns</Filter>
+    </ClInclude>
+    <ClInclude Include="CRevolver.h">
+      <Filter>Assets\Objects\Guns\Revolver</Filter>
+    </ClInclude>
+    <ClInclude Include="CInputManager.h">
+      <Filter>Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CCursor.h">
+      <Filter>Assets\Objects\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="cSoundManager.h">
+      <Filter>Manager\SoundManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CState.h">
+      <Filter>Assets\FSM\CState</Filter>
+    </ClInclude>
+    <ClInclude Include="CStateMachine.h">
+      <Filter>Assets\FSM\CStateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="CTelegram.h">
+      <Filter>Assets\FSM\Telegram</Filter>
+    </ClInclude>
+    <ClInclude Include="CMessageManager.h">
+      <Filter>Manager\MessageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjManager.h">
+      <Filter>Manager\OBJManager</Filter>
+    </ClInclude>
+    <ClInclude Include="OnPlayerControl.h">
+      <Filter>Assets\Objects\Player\States\OnPlayerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="CCameraManager.h">
+      <Filter>Manager\CameraManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet.h">
+      <Filter>Assets\Objects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Assets\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CTileMapManager.h">
+      <Filter>Manager\TileMapManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CTile.h">
+      <Filter>Assets\Objects\TIle</Filter>
+    </ClInclude>
+    <ClInclude Include="CTileMap.h">
+      <Filter>Assets\Objects\TIle\CTileMap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
