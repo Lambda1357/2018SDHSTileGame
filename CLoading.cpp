@@ -17,6 +17,8 @@ void CLoading::Init()
 	IMAGEMANAGER->AddImage("GUN", L"./Assets/Sprites/Gun.png");
 	IMAGEMANAGER->AddImage("BULLET", L"./Assets/Sprites/Bullet.png");
 	IMAGEMANAGER->AddImage("CURSOR", L"./Assets/Sprites/Cursor.png");
+
+	IMAGEMANAGER->AddImage("TEST_TILE", L"./Assets/Sprites/Tiles/TestTile.png");
 }
 
 void CLoading::Update()

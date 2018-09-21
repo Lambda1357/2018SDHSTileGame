@@ -29,7 +29,6 @@ bool CPlayer::HandleMessage(const CTelegram & msg)
 	return m_pStateMachine->HandleMessage(msg);
 }
 
-
 void CPlayer::Init()
 {
 	m_pSprite = IMAGEMANAGER->FindImage("PLAYER");
@@ -48,8 +47,6 @@ void CPlayer::Update()
 	float fRot;
 	D3DXVECTOR3 vDir = INPUTMANAGER->GetvScrollMousePos() - m_tInfo.vPos;
 	fRot = D3DXToDegree(atan2f(vDir.y, vDir.x));
-
-	DEBUG_LOG(m_tInfo.vPos.x << " : " << m_tInfo.vPos.y);
 
 	m_pGun->SetRot(fRot);
 
