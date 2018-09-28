@@ -1,6 +1,8 @@
 #include "DXUT.h"
 #include "CMainGame.h"
 
+#include "CLoading.h"
+#include "CTest.h"
 
 CMainGame::CMainGame()
 {
@@ -14,6 +16,9 @@ CMainGame::~CMainGame()
 
 void CMainGame::Init()
 {
+	SCENEMANAGER->AddScene("LOADING", new CLoading);
+	SCENEMANAGER->AddScene("TEST", new CTest);
+	SCENEMANAGER->ChangeScene("LOADING");
 }
 
 void CMainGame::Update()

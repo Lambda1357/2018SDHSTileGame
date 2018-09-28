@@ -7,9 +7,6 @@
 CSceneManager::CSceneManager() 
 	: m_curScene(nullptr), m_nextScene(nullptr)
 {
-	AddScene("LOADING", new CLoading);
-	AddScene("TEST", new CTest);
-	ChangeScene("LOADING");
 }
 
 

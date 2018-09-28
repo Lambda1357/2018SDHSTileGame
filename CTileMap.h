@@ -10,8 +10,10 @@ public:
 
 public:
 	CTileMap() { Init(); }
-	CTileMap(std::vector<std::vector<CTile*>*>* _vecTileMap)
-		: m_vecTileMap(_vecTileMap) { Init(); }
+	CTileMap(std::vector<std::vector<CTile*>*>* _vecTileMap, const string& _sTileMapName = "TileMap")
+		: m_vecTileMap(_vecTileMap) {
+		Init(); m_tInfo.sID = _sTileMapName;
+	}
 	virtual ~CTileMap();
 
 	CTile* GetTileToCoord(int _x, int _y) { return (*((*m_vecTileMap)[_y]))[_x]; }

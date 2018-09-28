@@ -7,8 +7,6 @@ class CTileMap;
 class CTileMapManager :
 	public CSingleton<CTileMapManager>
 {
-private:
-	map<string, CTileMap*> m_MapTileMaps;
 public:
 	CTileMapManager();
 	virtual ~CTileMapManager();
@@ -17,9 +15,8 @@ public:
 	void Destroy();
 
 public:
-	CTileMap* LoadTileMapFromFile(const string& key, const wstring& wFileName);
-	CTileMap* LoadTileMapFromFileA(const string& key, const string& fileName);
-	CTileMap* FindTileMap(const string& key);
+	CTileMap* LoadTileMapFromFile(const wstring& wFileName,const string& _sTileMapName = "TileMap");
+	CTileMap* LoadTileMapFromFileA(const string& fileName,const string& _sTileMapName = "TileMap");
 };
 
 #define TILEMANAGER CTileMapManager::GetInstance()

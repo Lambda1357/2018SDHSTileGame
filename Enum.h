@@ -14,9 +14,12 @@ enum MessageType {
 
 enum EntityType {
 	E_TYPE_OBJ,
+	E_TYPE_TILES,
 	E_TYPE_UI
 };
 
 enum TileType {
-	E_TEST_TILE
+	E_TEST_TILE,
+	E_TEST_WALL_1,
+	E_TEST_WALL_2
 };

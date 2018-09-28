@@ -9,12 +9,18 @@ typedef struct tagInfo
 
 typedef struct tagTileInfo
 {
+	struct ICOORD
+	{
+		int X;
+		int Y;
+	};
 	// 타일의 좌표
-	COORD Coordinate;
+	ICOORD Coordinate;
 	
 	bool  bCanPass;
+	bool  bIsInScreen;
 
 	// 타일 사이즈
-	static const INT tileSizeX = 100;
-	static const INT tileSizeY = 100;
+	static const INT tileSizeX = 260;
+	static const INT tileSizeY = 130;
 } TILE_INFO;

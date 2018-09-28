@@ -19,9 +19,9 @@ public:
 	TILE_INFO& GetTileInfo() { return m_tTileInfo; }
 	
 	void UpdatePos(const D3DXVECTOR3& _vMapPos) {
-		m_tInfo.vPos = D3DXVECTOR3(_vMapPos.x + m_tTileInfo.Coordinate.X * TILE_INFO::tileSizeX
-			- m_tTileInfo.Coordinate.Y * (TILE_INFO::tileSizeX * 0.5f),
-			_vMapPos.y + m_tTileInfo.Coordinate.Y * (TILE_INFO::tileSizeY*0.5f), _vMapPos.z);
+		m_tInfo.vPos = D3DXVECTOR3(_vMapPos.x + m_tTileInfo.Coordinate.X * TILE_INFO::tileSizeX * 0.5f
+			+ m_tTileInfo.Coordinate.Y * (TILE_INFO::tileSizeX * 0.5f),
+			_vMapPos.y + m_tTileInfo.Coordinate.Y * (TILE_INFO::tileSizeY*0.5f) - m_tTileInfo.Coordinate.X * (TILE_INFO::tileSizeY*0.5f), _vMapPos.z);
 	}
 
 public:

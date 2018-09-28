@@ -8,12 +8,12 @@ CObjManager::CObjManager()
 	// 엔티티 타입을 추가한다.
 
 	m_MapObjs.insert(make_pair(E_TYPE_OBJ, new list<CObj*>));
+	m_MapObjs.insert(make_pair(E_TYPE_TILES, new list<CObj*>));
 }
 
 
 CObjManager::~CObjManager()
 {
-	Destroy();
 }
 
 CObj * CObjManager::GetEntityFromID(const string & entity_id)
@@ -50,7 +50,7 @@ CObj * CObjManager::AddUIEntity(CObj * entity_ptr)
 	m_UIList.push_back(entity_ptr);
 	entity_ptr->Init();
 
-	return  entity_ptr;
+	return entity_ptr;
 }
 
 list<CObj*>* CObjManager::GetEntityList(int key)
@@ -107,21 +107,18 @@ void CObjManager::Destroy()
 {
 	for (auto iter : m_MapObjs)
 	{
-		for (auto iter2 : *iter.second)
+		for (auto iter2 = iter.second->begin(); iter2 != iter.second->end(); iter2++)
 		{
-			if (iter2)
-			{
-				iter2->Destroy();
-				delete iter2;
-				iter2 = nullptr;
-			}
+			SAFE_DESTROY((*iter2));
+			iter.second->erase(iter2);
 		}
+
+		iter.second->clear();
 		delete iter.second;
-		iter.second = nullptr;
 	}
 
-	for(auto iter : m_UIList)
-		if (iter) { iter->Destroy(); delete iter; iter = nullptr; }
+	for (auto iter : m_UIList)
+		SAFE_DESTROY(iter);
 
 	m_MapObjs.clear();
 	m_UIList.clear();
@@ -149,13 +146,9 @@ void CObjManager::ResetLists()
 	{
 		for (auto iter2 : *iter.second)
 		{
-			if (iter2)
-			{
-				iter2->Destroy();
-				delete iter2;
-			}
+			SAFE_DESTROY(iter2);
 		}
 	}
 	for (auto iter : m_UIList)
-		if (iter) { iter->Destroy(); delete iter; }
+		SAFE_DESTROY(iter);
 }

@@ -17,15 +17,14 @@ CTest::~CTest()
 
 void CTest::Init()
 {
-	OBJMANAGER->AddEntity(0,
-		TILEMANAGER->LoadTileMapFromFileA("TEST_MAP", "./Assets/Map_Info/TestMap.mif")
-	)->GetInfo().vPos = D3DXVECTOR3(0, 0, 0);
+	auto tileMap = OBJMANAGER->AddEntity(0, TILEMANAGER->LoadTileMapFromFileA("./Assets/Map_Info/TestMap.mif", "FirstTileMap"));
 
 	auto player = OBJMANAGER->AddEntity(0, new CPlayer);
 
 	OBJMANAGER->AddUIEntity(new CCursor);
 
 	CAMERAMANAGER->SetFollowObj(player);
+	tileMap->GetInfo().vPos = D3DXVECTOR3(0, 0, -1);
 }
 
 void CTest::Update()
@@ -45,4 +44,5 @@ void CTest::UI_Render()
 
 void CTest::Destroy()
 {
+	OBJMANAGER->Destroy();
 }

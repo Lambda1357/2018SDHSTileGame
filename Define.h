@@ -13,6 +13,8 @@
 #define DEBUG_LOG(log)  
 #endif
 
+#define SAFE_DESTROY(p) { if(p) { p->Destroy(); delete p;} p = nullptr; }
+
 // Message Additional Type
 
 #define NO_ADDITIONAL_INFO (void*)nullptr
