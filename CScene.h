@@ -1,5 +1,5 @@
 #pragma once
-class CScene
+typedef class CScene
 {
 public:
 	virtual void Init()		PURE;
@@ -10,5 +10,5 @@ public:
 public:
 	CScene();
 	virtual ~CScene();
-};
+} *LPSCENE;
 

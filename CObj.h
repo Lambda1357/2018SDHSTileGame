@@ -1,6 +1,6 @@
 #pragma once
 
-class CObj
+typedef class CObj
 {
 protected:
 	INFO m_tInfo;
@@ -19,6 +19,8 @@ public:
 
 	void SetID(const string& id) { m_tInfo.sID = id; }
 	INFO& GetInfo() { return m_tInfo; }
+	CSprite* GetSprite() { return m_pSprite; }
+	void SetSprite(CSprite* pSprite) { m_pSprite = pSprite; }
 
 public:
 
@@ -27,9 +29,17 @@ public:
 
 public:
 
-	static bool Compare(CObj* pDest, CObj* pSour)
+	static bool CompareZ(CObj* pDest, CObj* pSour)
 	{
 		return (pDest->m_tInfo.vPos.z < pSour->m_tInfo.vPos.z);
 	}
-};
+
+	static bool CompareY(CObj* pDest, CObj* pSour)
+	{
+		if (pDest->m_tInfo.vPos.z == pSour->m_tInfo.vPos.z)
+			return pDest->m_tInfo.vPos.y < pSour->m_tInfo.vPos.y;
+		else
+			return false;
+	}
+} *LPOBJ;
 

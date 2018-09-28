@@ -88,7 +88,8 @@ void CObjManager::Render()
 		}
 	}
 
-	listData.sort(CObj::Compare);
+	listData.sort(CObj::CompareZ);
+	listData.sort(CObj::CompareY);
 
 	for (auto iter : listData)
 		iter->Render();
@@ -112,13 +113,15 @@ void CObjManager::Destroy()
 			{
 				iter2->Destroy();
 				delete iter2;
+				iter2 = nullptr;
 			}
 		}
 		delete iter.second;
+		iter.second = nullptr;
 	}
 
 	for(auto iter : m_UIList)
-		if (iter) { iter->Destroy(); delete iter; }
+		if (iter) { iter->Destroy(); delete iter; iter = nullptr; }
 
 	m_MapObjs.clear();
 	m_UIList.clear();

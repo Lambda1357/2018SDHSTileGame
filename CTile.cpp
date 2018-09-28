@@ -4,11 +4,12 @@
 
 CTile::CTile()
 {
-
+	Init();
 }
 
 CTile::CTile(INT _coordX, INT _coordY, bool _canPass)
 {
+	Init();
 	m_tTileInfo.Coordinate.X = _coordX;
 	m_tTileInfo.Coordinate.Y = _coordY;
 	m_tTileInfo.bCanPass = _canPass;
@@ -17,7 +18,7 @@ CTile::CTile(INT _coordX, INT _coordY, bool _canPass)
 
 CTile::~CTile()
 {
-
+	Destroy();
 }
 
 void CTile::Init()
@@ -42,5 +43,5 @@ void CTile::Destroy()
 
 bool CTile::HandleMessage(const CTelegram & msg)
 {
-	return false;
+	return HandleBasicMessage(msg);
 }

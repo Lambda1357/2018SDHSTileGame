@@ -2,7 +2,7 @@
 
 class CObj;
 
-class CTelegram
+typedef class CTelegram
 {
 public:
 
@@ -33,4 +33,4 @@ public:
 
 	// Set 자료형을 사용하기 위한 연산자 오버로딩
 	bool operator < (CTelegram tel) const { return DispatchTime < tel.DispatchTime; }
-};
+} *LPTELEGRAM;

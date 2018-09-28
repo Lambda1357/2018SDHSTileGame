@@ -1,5 +1,5 @@
 #pragma once
-class CSprite
+typedef class CSprite
 {
 public:
 	LPDIRECT3DTEXTURE9 m_pTex;
@@ -14,5 +14,5 @@ public:
 public:
 
 	CSprite * operator [] (int index) { return GetImage(index); }
-};
+} *LPSPRITE;
 
