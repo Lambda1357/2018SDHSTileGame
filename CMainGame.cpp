@@ -47,6 +47,7 @@ void CMainGame::Destroy()
 	CObjManager		::ReleaseInstance();
 	CMessageManager	::ReleaseInstance();
 	CCameraManager	::ReleaseInstance();
+	CTileMapManager	::ReleaseInstance();
 }
 
 void CMainGame::Lost()

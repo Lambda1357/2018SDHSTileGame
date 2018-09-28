@@ -21,7 +21,7 @@ void CBullet::Update()
 {
 	m_tInfo.vPos += m_vGoVector * m_fSpeed;
 
-	m_fRot = D3DXToDegree(atan2f(m_tInfo.vPos.y, m_tInfo.vPos.x));
+	m_fRot = D3DXToDegree(atan2f(m_vGoVector.y, m_vGoVector.x));
 }
 
 void CBullet::Render()

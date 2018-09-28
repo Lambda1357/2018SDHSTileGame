@@ -46,6 +46,7 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
 	//_CrtSetBreakAlloc(1335);
 
 	MainGame.Init(); 
+
     return S_OK;
 }
 
