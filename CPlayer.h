@@ -1,5 +1,5 @@
 #pragma once
-#include "CObj.h"
+#include "CGameObject.h"
 
 class CGun;
 
@@ -7,13 +7,14 @@ template <class entity_type>
 class CStateMachine;
 
 class CPlayer :
-	public CObj
+	public CGameObject
 {
 private:
 	CGun * m_pGun;
 	CStateMachine<CPlayer>* m_pStateMachine;
 
 	bool bFlip;
+	float fSpeed;
 public:
 	virtual void Init();
 	virtual void Update();

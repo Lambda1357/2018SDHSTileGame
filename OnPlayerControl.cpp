@@ -42,6 +42,8 @@ void OnPlayerControl::Execute(CPlayer *pPlayer)
 		
 		MESSAGEMANAGER->DispatchMsg(20, pPlayer->GetInfo().sID, "Revolver", E_MSG_SHOOT, (LPVOID)curVec);
 	}
+
+	//DEBUG_LOG(pPlayer->GetInfo().vPos.x << " " <<  pPlayer->GetInfo().vPos.y);
 }
 
 void OnPlayerControl::Exit(CPlayer *pPlayer)

@@ -387,13 +387,17 @@
   <ItemGroup>
     <ClCompile Include="CBullet.cpp" />
     <ClCompile Include="CCameraManager.cpp" />
+    <ClCompile Include="CCollisionManager.cpp" />
+    <ClCompile Include="CGameObject.cpp" />
     <ClCompile Include="CTile.cpp" />
     <ClCompile Include="CTileMap.cpp" />
     <ClCompile Include="CTileMapManager.cpp" />
     <ClCompile Include="OnPlayerControl.cpp" />
     <ClInclude Include="CBullet.h" />
     <ClInclude Include="CCameraManager.h" />
+    <ClInclude Include="CCollisionManager.h" />
     <ClInclude Include="CCursor.h" />
+    <ClInclude Include="CGameObject.h" />
     <ClInclude Include="CGun.h" />
     <ClInclude Include="CImageManager.h" />
     <ClInclude Include="CInputManager.h" />

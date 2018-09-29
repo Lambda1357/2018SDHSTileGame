@@ -30,13 +30,15 @@ void CTile::Init()
 
 void CTile::Update()
 {
-	if (m_tInfo.vPos.x - (m_pSprite->m_Info.Width / 2.f) < (WINSIZEX / 2.f) + CAMERAMANAGER->GetCameraPos().x - 25 &&
-		m_tInfo.vPos.x + (m_pSprite->m_Info.Width / 2.f) > CAMERAMANAGER->GetCameraPos().x - (WINSIZEX / 2.f) + 25 &&
-		m_tInfo.vPos.y - (m_pSprite->m_Info.Height / 2.f) < (WINSIZEY / 2.f) + CAMERAMANAGER->GetCameraPos().y - 25 &&
-		m_tInfo.vPos.y + (m_pSprite->m_Info.Height / 2.f) > CAMERAMANAGER->GetCameraPos().y - (WINSIZEY / 2.f) + 25)
+	if (m_tInfo.vPos.x - (m_pSprite->m_Info.Width / 2.f) < (WINSIZEX / 2.f) + CAMERAMANAGER->GetCameraPos().x  &&
+		m_tInfo.vPos.x + (m_pSprite->m_Info.Width / 2.f) > CAMERAMANAGER->GetCameraPos().x - (WINSIZEX / 2.f)  &&
+		m_tInfo.vPos.y - (m_pSprite->m_Info.Height / 2.f) < (WINSIZEY / 2.f) + CAMERAMANAGER->GetCameraPos().y &&
+		m_tInfo.vPos.y + (m_pSprite->m_Info.Height / 2.f) > CAMERAMANAGER->GetCameraPos().y - (WINSIZEY / 2.f))
 		m_tTileInfo.bIsInScreen = true;
 	else
 		m_tTileInfo.bIsInScreen = false;
+
+	SetRectColToImg(m_tInfo.vPos);
 }
 
 void CTile::Render()

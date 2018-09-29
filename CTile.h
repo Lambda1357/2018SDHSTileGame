@@ -1,7 +1,7 @@
 #pragma once
-#include "CObj.h"
+#include "CGameObject.h"
 typedef class CTile :
-	public CObj
+	public CGameObject
 {
 private:
 	TILE_INFO m_tTileInfo;

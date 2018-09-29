@@ -17,7 +17,6 @@ CRevolver::~CRevolver()
 
 bool CRevolver::HandleMessage(const CTelegram & msg)
 {
-
 	bool result = false;
 
 	switch (msg.Msg) {
@@ -32,7 +31,7 @@ bool CRevolver::HandleMessage(const CTelegram & msg)
 			//DEBUG_LOG("Shoot : " << curVec.x << " : ");
 			//DEBUG_LOG(curVec.y << " : " << curVec.z);
 
-			OBJMANAGER->AddEntity(0, new CBullet(m_tInfo.vPos,curVec, 50.0f));
+			OBJMANAGER->AddEntity(0, new CBullet(m_tInfo.vPos,curVec, 750.0f));
 
 			result = true; break;
 		}

@@ -29,6 +29,10 @@ public:
 
 public:
 
+	virtual const RECT& GetCollider() { return {}; }
+
+public:
+
 	static bool CompareZ(CObj* pDest, CObj* pSour)
 	{
 		return (pDest->m_tInfo.vPos.z < pSour->m_tInfo.vPos.z);

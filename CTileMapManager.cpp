@@ -130,7 +130,6 @@ LPTILEMAP CTileMapManager::LoadTileMapFromFile(const wstring & wFileName,
 
 	for (auto iter : temporary) {
 		(*(*vecTileMap)[iter->GetTileInfo().Coordinate.Y])[iter->GetTileInfo().Coordinate.X] = iter;
-		DEBUG_LOG(iter->GetTileInfo().Coordinate.X << iter->GetTileInfo().Coordinate.Y);
 	}
 
 	// 임시 리스트 초기화
@@ -246,7 +245,6 @@ LPTILEMAP CTileMapManager::LoadTileMapFromFileA(const string & fileName,
 
 	for (auto iter : temporary) {
 		(*(*vecTileMap)[iter->GetTileInfo().Coordinate.Y])[iter->GetTileInfo().Coordinate.X] = iter;
-		DEBUG_LOG(iter->GetTileInfo().Coordinate.X << iter->GetTileInfo().Coordinate.Y);
 	}
 
 	// 임시 리스트 초기화

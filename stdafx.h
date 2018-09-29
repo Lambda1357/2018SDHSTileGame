@@ -28,3 +28,4 @@ using namespace chrono;
 #include "CMessageManager.h"
 #include "CCameraManager.h"
 #include "CTileMapManager.h"
+#include "CCollisionManager.h"

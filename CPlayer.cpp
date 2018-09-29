@@ -54,6 +54,7 @@ void CPlayer::Update()
 	m_pGun->SetFlip(bFlip);
 
 	m_pStateMachine->Update();
+	SetRectColToImg(m_tInfo.vPos);
 }
 
 void CPlayer::Render()

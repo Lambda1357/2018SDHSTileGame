@@ -24,12 +24,16 @@ void CTest::Init()
 	OBJMANAGER->AddUIEntity(new CCursor);
 
 	CAMERAMANAGER->SetFollowObj(player);
-	tileMap->GetInfo().vPos = D3DXVECTOR3(0, 0, -1);
+	tileMap->GetInfo().vPos = D3DXVECTOR3(-TILE_INFO::tileSizeX*5, 0, -1);
+
+	COLMANAGER->InsertObj(reinterpret_cast<CGameObject*>(player));
+	COLMANAGER->SetTileMap(reinterpret_cast<CTileMap*>(tileMap));
 }
 
 void CTest::Update()
 {
 	OBJMANAGER->Update();
+	COLMANAGER->CollisionCheck();
 }
 
 void CTest::Render()
@@ -44,5 +48,6 @@ void CTest::UI_Render()
 
 void CTest::Destroy()
 {
+	COLMANAGER->ListClear();
 	OBJMANAGER->Destroy();
 }

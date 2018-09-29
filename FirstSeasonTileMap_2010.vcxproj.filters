@@ -111,6 +111,12 @@
     <Filter Include="Assets\Objects\TIle\CTileMap">
       <UniqueIdentifier>{91eb1c24-395f-42e5-9cb1-ba201eb69390}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Manager\CollisionManager">
+      <UniqueIdentifier>{25757728-a03b-4761-8e1e-80c7ffe3c1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Objects\base object">
+      <UniqueIdentifier>{40b0041a-5fb8-44e1-87be-e535113563bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -199,9 +205,6 @@
     <ClCompile Include="CMultiSprite.cpp">
       <Filter>Assets\Sprites\MultiSprite</Filter>
     </ClCompile>
-    <ClCompile Include="CObj.cpp">
-      <Filter>Assets\Objects</Filter>
-    </ClCompile>
     <ClCompile Include="CPlayer.cpp">
       <Filter>Assets\Objects\Player</Filter>
     </ClCompile>
@@ -256,6 +259,15 @@
     <ClCompile Include="CTileMap.cpp">
       <Filter>Assets\Objects\TIle\CTileMap</Filter>
     </ClCompile>
+    <ClCompile Include="CCollisionManager.cpp">
+      <Filter>Manager\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CObj.cpp">
+      <Filter>Assets\Objects\base object</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameObject.cpp">
+      <Filter>Assets\Objects\base object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -305,9 +317,6 @@
     </ClInclude>
     <ClInclude Include="CMultiSprite.h">
       <Filter>Assets\Sprites\MultiSprite</Filter>
-    </ClInclude>
-    <ClInclude Include="CObj.h">
-      <Filter>Assets\Objects</Filter>
     </ClInclude>
     <ClInclude Include="CPlayer.h">
       <Filter>Assets\Objects\Player</Filter>
@@ -365,6 +374,15 @@
     </ClInclude>
     <ClInclude Include="CTileMap.h">
       <Filter>Assets\Objects\TIle\CTileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionManager.h">
+      <Filter>Manager\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CObj.h">
+      <Filter>Assets\Objects\base object</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameObject.h">
+      <Filter>Assets\Objects\base object</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

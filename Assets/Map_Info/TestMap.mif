@@ -3,16 +3,16 @@
 # (x좌표) (y좌표) (블럭 타입) (지나갈 수 있는 블럭인가)
 
 # 축 0
-X:0 Y:0 TYPE:1 0
-X:1 Y:0 TYPE:1 0
-X:2 Y:0 TYPE:1 0
-X:3 Y:0 TYPE:1 0
-X:4 Y:0 TYPE:1 0
-X:5 Y:0 TYPE:1 0
-X:6 Y:0 TYPE:1 0
-X:7 Y:0 TYPE:1 0
-X:8 Y:0 TYPE:1 0
-X:9 Y:0 TYPE:2 0
+X:0 Y:0 TYPE:1 1
+X:1 Y:0 TYPE:1 1
+X:2 Y:0 TYPE:1 1
+X:3 Y:0 TYPE:1 1
+X:4 Y:0 TYPE:1 1
+X:5 Y:0 TYPE:1 1
+X:6 Y:0 TYPE:1 1
+X:7 Y:0 TYPE:1 1
+X:8 Y:0 TYPE:1 1
+X:9 Y:0 TYPE:2 1
 # 축 1
 X:0 Y:1 TYPE:0 0
 X:1 Y:1 TYPE:0 0
